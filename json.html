@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+            method:"GET",
+            url:"https://jsonplaceholder.typicode.com/posts",
+            success: function(result){
+                    result.forEach(element => {
+                        var b=aarr(element);
+                        b();  
+                        
+                    });
+            }});
+    });
+}); 
+function aarr(element)
+{
+    function aab()
+    {
+        var j="<div><h1>USER Id-"+element.userId+"</h1><br><h1>Id-"+element.id+"</h1><br>"
+          //  var di=document.getElementById('body');
+            //            di.insertAdjacentHTML('afterend',j);
+            $('#body').append(j);   
+    }
+    return aab;
+}   
+</script>
+</head>
+<body id="body">
+<button>abc</button>
