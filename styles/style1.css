@@ -1,0 +1,37 @@
+div{
+    
+    border: solid ;
+    border-color: black;
+}
+#menu {
+    width: 29.3%;
+    background: blue;
+    float: left;
+    
+}
+#shop {
+    
+    width: 70%;
+    background:blueviolet;
+    float: right;
+    height: 170px;
+   
+
+}
+div h1{ 
+    color: rgb(170, 226, 243);
+}
+
+div > ul {
+    font-family: fantasy;
+    
+    
+}
+ul >li {
+   
+    color: purple;
+    
+}
+body{
+    margin: 0;
+}

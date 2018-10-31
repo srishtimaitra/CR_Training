@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style 
+</head>
+<body style="color:black">
+    <form action="#">
+    <table   >
+        <caption align="center" >Form</caption>
+        <tr> 
+            <td align="center" valign="middle">Name</td>
+            <td align="center" valign="middle"><input type="text" placeholder="Name" id="name"></td>
+         
+        </tr>
+        <tr>
+                <td align="center" valign="middle">Phone </td>
+                <td align="center" valign="middle"><input type="number" placeholder="Phone" id="phone"></td>
+        </tr>   
+        <tr>
+                <td align="center" valign="middle">Email </td>
+                <td align="center" valign="middle"><input type="email" placeholder="Email" id="email"></td>
+        </tr>
+        <tr>
+                
+                <td align="center" valign="middle" colspan="2"><center><input type="submit" onclick="sub()" value="Submit"></center></td>
+        </tr>
+    </table>
+    </form>
+<script type="text/javascript">
+function sub()
+{
+    var phone= document.getElementById("phone");
+    var name= document.getElementById("name");
+    var email=document.getElementById("email");
+    var flag=0;
+
+    if(phone.value.length!=10)
+    {
+        alert("proper phone");
+        flag=1;
+    }
+    if(flag==0)
+    {
+        console.log(name.value);
+        console.log(phone.value);
+        console.log(email.value);
+    }
+}
+
+</script>
+</body>
+</html>

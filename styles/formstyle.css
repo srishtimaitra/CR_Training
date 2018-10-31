@@ -1,0 +1,67 @@
+table{
+    border: 1px solid black;
+    padding:"10";
+     background-color: rgb(56, 78, 45);
+    opacity: 0.75;
+}
+table tr{
+    height: 100px;
+}
+table td{
+    width: 100px;
+}
+a[href^='www.google']{color: white;}
+tr:nth-child(2n+1){
+    background-color: brown;
+}
+#a{
+    background: linear-gradient(black,gold);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation-duration: 5s;
+    animation-name: slidin;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#b{
+    background: radial-gradient(black,gold);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation-duration: 5s;
+    animation-name: slidin1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidin{
+    from{
+        margin-left: 100%;
+        width: 0px;
+        height: 0px;
+    }
+    to{ 
+        margin-left: 0%;
+        width:100px;
+        height:100px;
+
+    }
+}
+@keyframes slidin1{
+    from{
+        margin-left: 0%;
+        width: 0px;
+        height: 0px;
+    }
+    to{ 
+        margin-left: 100%;
+        width:100px;
+        height:100px;
+
+    }
+}
+#cube{ width: 100px;
+    height: 100px;
+    background: linear-gradient(red,black);
+
+}

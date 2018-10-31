@@ -1,0 +1,86 @@
+
+#car {
+    position: absolute;
+    bottom: 248px;
+    height: 230px;
+    width: 600px;
+    animation-name: slidin1;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear;
+    animation-duration:1s;
+}
+.tyre1 {
+    position: absolute;
+   left: 70px;
+   bottom: 260px;
+   height: 110px;
+   width: 110px;
+   
+
+
+}
+.tyre2 {
+    position: absolute;
+   left :473px;
+   
+   bottom: 260px;
+   height: 110px;
+   width: 110px;
+    
+
+}
+.tyre{
+    animation-name: rotate;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: slidin1;
+    animation-iteration-count: infinite;
+}
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        
+     }
+     to{
+        transform: rotate(360deg);
+       
+     }
+    
+}
+
+#cloud{
+    animation-duration: 1s;
+    animation-name: slidin;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear;
+    
+   display: block;
+}
+@keyframes slidin{
+    from{
+        margin-left: 1000px;
+
+    }
+    to{
+        margin-left: 0;
+    }
+}
+@keyframes slidin1{
+    from{
+        margin-left: 0px;
+
+    }
+    to{
+        margin-left: 1000px;
+    }
+}
+#street {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    bottom :162px;
+
+}

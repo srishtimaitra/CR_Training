@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr= new Array(10);
+        var arr1= new Array(10);
+        arr=[8,3,6,1,7,2,5,9,11,2];
+        for(var i=0;i<10;i++)
+        console.log(arr[i]);
+        console.log("sum of largest 2");
+        for(var i=0;i<10;i++)
+        {
+            for(var j=i+1;j<10;j++)
+            {
+                if(arr[i]>arr[j])
+                {
+                    var a= arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=a;
+                }
+            }
+        }
+        
+        console.log(arr[8]+arr[9]);
+        </script>
+</body>
+</html>
